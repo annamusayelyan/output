@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 main() {
-  runApp (MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -11,7 +11,27 @@ class MyApp extends StatelessWidget {
         title: Text('first name'),
         backgroundColor: Colors.red,
       ),
-      body:Container(),
-    ));
+      body: Column(
+        children:<Widget>[
+      RaisedButton(
+      child: Text('Press', style: TextStyle(color: Colors.black),),
+      color: Colors.red,
+      onPressed: () {},
+    ),
+          Card(
+            child: Column(children: <Widget>[
+              Image.asset('assets/food.jpg'),
+              Text('Delicious'),
+            ],
+            ),
+
+          )
+    ]
+
+
+    )
+    ,
+    )
+    );
   }
 }
