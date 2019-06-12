@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:first_app/products.dart';
+import 'package:flrst_app/products.dart';
 main() {
   runApp(MyApp());
 }
@@ -20,21 +20,8 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Column(
           children: <Widget>[
-            RaisedButton(
-              child: Text(
-                'Press',
-                style: TextStyle(
-                  color: Colors.white,
-                ),
-              ),
-              color: Colors.red,
-              onPressed: () {
-                setState(() {
-                  _products.add('Advanced food tester');
-                });
-              },
-            ),
-           Products(_products)
+
+            Products(_products),
           ],
         ),
       ),
