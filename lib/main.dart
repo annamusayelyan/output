@@ -1,29 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flrst_app/products.dart';
+
+import './text_control.dart';
+
 main() {
   runApp(MyApp());
 }
-class MyApp extends StatefulWidget {
+
+class MyApp extends StatelessWidget {
   @override
-  State<StatefulWidget> createState() {
-    return _MyAppState();
-  }
-}
-class _MyAppState extends State<MyApp> {
-  List<String> _products = ['Food Tester'];
-  build(context) {
+  Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('first app'),
-          backgroundColor: Colors.deepPurpleAccent,
+          title: Text('Assignment 1'),
         ),
-        body: Column(
-          children: <Widget>[
-
-            Products(_products),
-          ],
-        ),
+        body: TextControl(),
       ),
     );
   }
